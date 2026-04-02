@@ -38,8 +38,8 @@ def best_deal(price_a, qty_a, disc_a, price_b, qty_b, disc_b, tax_pct):
     Debe USAR la función final_price para resolver el ejercicio.
     """
 
-    total_a = (price_a, qty_a, disc_a,tax_pct)
-    total_b = (price_b, qty_b, disc_b,tax_pct)
+    total_a = final_price(price_a, qty_a, disc_a,tax_pct)
+    total_b = final_price(price_b, qty_b, disc_b,tax_pct)
 
     if total_a <= total_b:
         return "A"
